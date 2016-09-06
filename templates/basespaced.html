@@ -1,0 +1,81 @@
+<html>
+<head>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/jquery.dataTables.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" />
+
+    <script src=" {% static 'js/jquery.js' %}"></script>
+    <script src=" {% static 'js/bootstrap.min.js' %}"></script>
+    <script src=" {% static 'js/jquery.dataTables.min.js' %}"></script>
+
+
+    {% block cabecalho %}
+        <title>Usando Python para ser um Sysadmin Melhor</title>
+    {% endblock %}
+<style>
+    body {padding-top: 70px;}
+  </style>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="collapse navbar-collapse">
+        <a class="navbar-brand"></a>
+        <a class="navbar-brand" style="font-size:2.7em;" ><em>{{ titulo }}</em></a>
+
+        <ul class="nav navbar-nav navbar-right">
+	
+	{% if number %}
+          <li><a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="/">Slide {{ number}}</a>
+          <ul class="dropdown-menu">
+           <li> <a href="/">Capa</a> </li>
+           <li> <a href="/slide2/">Slide 2</a> </li>
+           <li> <a href="/slide3/">Slide 3</a> </li>
+           <li> <a href="/slide4/">Slide 4</a> </li>
+           <li> <a href="/slide5/">Slide 5</a> </li>
+           <li> <a href="/slide6/">Slide 6</a> </li>
+           <li> <a href="/slide7/">Slide 7</a> </li>
+           <li> <a href="/slide8/">Slide 8</a> </li>
+           <li> <a href="/slide9/">Slide 9</a> </li>
+           <li> <a href="/slide10/">Slide 10</a> </li>
+           <li> <a href="/slide11/">Slide 11</a> </li>
+           <li> <a href="/slide12/">Slide 12</a> </li>
+           <li> <a href="/end/">Perguntas/Agradecimentos</a> </li>
+          </ul>
+          </li>
+	{% endif %}
+
+       </ul>
+      </div><!--/.nav-collapse -->
+  </div>
+
+<div class="navbar-fixed-bottom-tchelinux">
+	{% if anterior %}
+        <a style="font-size:4.0em;" class="glyphicon glyphicon-circle-arrow-left"  href="{{ anterior }}" accesskey="z"></a>
+	{% endif %}
+	{% if proximo %}
+        <ul class="nav navbar-nav navbar-right">
+        <a style="font-size:4.0em;" style="float: right;" class="glyphicon glyphicon-circle-arrow-right"  href="{{ proximo }}" accesskey="x"></a>
+	{% endif %}
+        </ul>
+</div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="collapse navbar-collapse">
+        <a class="navbar-brand" href="http://caxias.tchelinux.org">PyCaxias 2016</a>
+        <ul class="nav navbar-nav navbar-right">
+        <a class="navbar-brand">Usando Python para ser um Sysadmin Melhor</a>
+        </ul>
+      </div>
+    </div>
+
+    {% block corpo %}
+        <!-- body -->
+    {% endblock %}
+
+</body>
+</html>
+

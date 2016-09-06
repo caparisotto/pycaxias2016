@@ -1,0 +1,6 @@
+https://docs.djangoproject.com/pt-br/1.10/intro/tutorial01/
+
+https://osantana.me/curso-de-python-e-django/
+
+http://www.w3schools.com/
+

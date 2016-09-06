@@ -1,0 +1,5 @@
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.rpm
+mojo get http://www.globo.com/ 'a[href]' attr href
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+find . -name '*.mp3' | sort | while read -r mp3; do echo -e "<h3>$mp3</h3>\n<audio controls src=\"$mp3\"></audio>"; done > index.html; python -m SimpleHTTPServer
+
