@@ -60,19 +60,12 @@ def slide8(request):
 	titulo = "Outras Aplicações"
         return render_to_response("slide8.html",{'titulo': titulo, 'number': number, 'anterior': anterior, 'proximo': proximo})
 
-def slide12(request):
-	number = 12
-	anterior = "/slide11/"
-	proximo = "/slide13/"
-	titulo = "Novas Estratégias"
-        return render_to_response("slide12.html",{'titulo': titulo, 'number': number, 'anterior': anterior, 'proximo': proximo})
-
-def slide13(request):
-	number = 13
-	anterior = "/slide12/"
+def slide9(request):
+	number = 9
+	anterior = "/slide8/"
 	proximo = "/end/"
-	titulo = "Esse é um slide teste, eu aposto que vou esquecer de tirar antes da palestra"
-        return render_to_response("slide13.html",{'titulo': titulo, 'number': number, 'anterior': anterior, 'proximo': proximo})
+	titulo = "Novas Estratégias"
+        return render_to_response("slide9.html",{'titulo': titulo, 'number': number, 'anterior': anterior, 'proximo': proximo})
 
 def final(request):
 	titulo = "Perguntas?"
