@@ -1,0 +1,36 @@
+{% extends 'basespaced.html' %}
+
+{% load i18n %}
+    
+{% block corpo %}
+
+<div class="container">
+
+	<table>
+
+	<tr>
+	<td><h1><a href="http://nerdspace.com.br/7-caracteristicas-de-um-sysadmin-linux-de-sucesso/">Dicas Finais:</a></td>
+	<td><h1>Seja curioso</td>
+	</tr>
+	<tr>
+	<td><h1>Seja persistente</td>
+	<td><h1>Tenha iniciativa</td>
+	</tr>
+	<tr>
+	<td><h1>Faça parte da solução</td>
+	<td><h1>Esteja em constante aprendizado</td>
+	</tr>
+	<tr>
+	<td><h1>Treine</td>
+	<td><h1>Tenha paixão pelo que você faz</td>
+	</tr>
+	<tr>
+	<td><h1>Ninguém é tão burro que não possa ensinar nada...</td>
+	<td><h1>nem tão inteligente que não possa aprender.</td>
+	</tr>
+
+	</table>
+</div>
+
+{% endblock %}
+
