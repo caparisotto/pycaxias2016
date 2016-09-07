@@ -69,5 +69,5 @@ def slide9(request):
 
 def final(request):
 	titulo = "Perguntas?"
-	anterior = "/slide13/"
+	anterior = "/slide9/"
         return render_to_response("ultimo.html",{'titulo': titulo, 'anterior': anterior})
