@@ -1,31 +1,8 @@
-{% extends 'basespaced.html' %}
+	<img src=/{{ MEDIA_URL }}media/imagens/mbsafe_4.PNG width="1080" height="590">
 
-{% load i18n %}
-    
-{% block corpo %}
-
-<div class="container">
-
-
-       <div class="coluna col4">
-                <h3>
-		<p><li>Scripts Nagios<br><br></li>
-		<p><li>Agenda Telefônica<br><br></li>
-		<p><li>Relógio Ponto<br><br></li>
-		<p><li>Relatórios de E-mail<br><br></li>
-		<p><li>Fabric <a href="http://docs.python-guide.org/en/latest/scenarios/admin/">and others</a></li>
-                </h3>
-        </div>
-
-        <div class="coluna col8">
-                <img src=/{{ MEDIA_URL }}media/imagens/fab_1.PNG height="350" width="500">
-        </div>
-
-
-</div>
-
-
-</div>
-
-{% endblock %}
-
+	{% if anterior %}
+        <a href="{{ anterior }}" accesskey="z"></a>
+	{% endif %}
+	{% if proximo %}
+        <a href="{{ proximo }}" accesskey="x"></a>
+	{% endif %}

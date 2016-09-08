@@ -1,8 +1,23 @@
-	<img src=/{{ MEDIA_URL }}media/imagens/mbsafe_1.PNG width="1080" height="590">
+{% extends 'basespaced.html' %}
 
-	{% if anterior %}
-        <a href="{{ anterior }}" accesskey="z"></a>
-	{% endif %}
-	{% if proximo %}
-        <a href="{{ proximo }}" accesskey="x"></a>
-	{% endif %}
+{% load i18n %}
+    
+{% block corpo %}
+
+<div class="container">
+
+	<table>
+        <tr>
+        <td><h3><li>Resultados em Curto Prazo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </li></td>
+        </tr>
+        <tr>
+        <td><h3><li>Facilidade na Integração com o Linux</li></td>
+        </tr>
+        </table>
+
+
+
+</div>
+
+{% endblock %}
+

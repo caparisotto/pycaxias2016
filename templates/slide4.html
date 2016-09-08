@@ -1,8 +1,19 @@
-	<img src=/{{ MEDIA_URL }}media/imagens/mbsafe_2.PNG width="1080" height="590">
+{% extends 'basespaced.html' %}
 
-	{% if anterior %}
-        <a href="{{ anterior }}" accesskey="z"></a>
-	{% endif %}
-	{% if proximo %}
-        <a href="{{ proximo }}" accesskey="x"></a>
-	{% endif %}
+{% load i18n %}
+    
+{% block corpo %}
+
+<div class="container">
+
+	<table>
+        <tr>
+        <td><h3><li><a href="https://docs.djangoproject.com/pt-br/1.10/intro/tutorial01/">Django First App, OSantana, W3Schools</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </li></td>
+        </tr>
+        </table>
+
+
+</div>
+
+{% endblock %}
+
