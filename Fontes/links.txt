@@ -1,0 +1,10 @@
+Slide4:
+https://docs.djangoproject.com/pt-br/1.10/intro/tutorial01/
+https://osantana.me/curso-de-python-e-django/
+http://www.w3schools.com/
+https://www.youtube.com/user/cursosemvideo/videos
+Slide10:
+http://docs.python-guide.org/en/latest/scenarios/admin/
+Contatos/Github:
+carlos.parisotto@mbsec.com.br
+https://github.com/caparisotto/pycaxias
